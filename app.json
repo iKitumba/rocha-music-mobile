@@ -19,7 +19,8 @@
         {
           "origin": "https://n"
         }
-      ]
+      ],
+      "expo-font"
     ],
     "name": "rocha-music-mobile",
     "slug": "rocha-music-mobile",
