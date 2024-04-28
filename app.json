@@ -2,7 +2,13 @@
   "expo": {
     "scheme": "acme",
     "userInterfaceStyle": "automatic",
-    "orientation": "default",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#020617"
+    },
     "web": {
       "output": "static",
       "bundler": "metro"
@@ -16,6 +22,9 @@
       ]
     ],
     "name": "rocha-music-mobile",
-    "slug": "rocha-music-mobile"
+    "slug": "rocha-music-mobile",
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }
