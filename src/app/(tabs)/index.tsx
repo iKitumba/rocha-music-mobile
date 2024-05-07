@@ -72,7 +72,7 @@ const HomePage = () => {
         <View className="px-6 mt-6">
           <View className="h-12 bg-slate-800 my-6 rounded-full flex-row border-1 border-[rgba(255, 255, 255, 0.11)] justify-between items-center">
             <TextInput
-              className="text-base px-4"
+              className="text-base px-4 text-slate-100"
               placeholderTextColor={"#999"}
               placeholder="Pesquisa pela música ou autor"
             />
