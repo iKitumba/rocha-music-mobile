@@ -1,12 +1,13 @@
-import { BellRing, CloudDownload } from "lucide-react-native";
+import { BellRing, CloudDownload, Search } from "lucide-react-native";
 import React from "react";
 import {
-  View,
-  Text,
-  StatusBar,
-  Image,
-  TouchableOpacity,
   FlatList,
+  Image,
+  StatusBar,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from "react-native";
 
 const HomePage = () => {
@@ -65,6 +66,18 @@ const HomePage = () => {
           }}
           horizontal
         />
+      </View>
+      <View className="px-6 mt-6">
+        <View className="h-12 bg-slate-800 my-6 rounded-full flex-row border-1 border-[rgba(255, 255, 255, 0.11)] justify-between items-center">
+          <TextInput
+            className="text-base px-4"
+            placeholderTextColor={"#999"}
+            placeholder="Pesquisa pela música ou autor"
+          />
+          <TouchableOpacity className="w-12 h-12 bg-slate-500 rounded-full items-center justify-center">
+            <Search size={24} color={"white"} />
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
