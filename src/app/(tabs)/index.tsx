@@ -41,7 +41,7 @@ const HomePage = () => {
             data={[1, 2, 3, 4, 5]}
             keyExtractor={String}
             contentContainerStyle={{ gap: 12, paddingHorizontal: 32 }}
-            renderItem={({ item }) => {
+            renderItem={() => {
               return (
                 <View className="gap-3">
                   <Image
