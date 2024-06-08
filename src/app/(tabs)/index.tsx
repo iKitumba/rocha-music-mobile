@@ -40,13 +40,14 @@ const HomePage = () => {
           <FlatList
             data={[1, 2, 3, 4, 5]}
             keyExtractor={String}
+            style={{ flex: 1 }}
             contentContainerStyle={{ gap: 12, paddingHorizontal: 32 }}
             renderItem={() => {
               return (
                 <View className="gap-3">
                   <Image
                     source={require("@/assets/cardib.jpeg")}
-                    className="h-52 aspect-video rounded-2xl object-cover"
+                    className="max-h-40 h-40 w-auto aspect-[2/1] rounded-2xl object-cover"
                     style={{ objectFit: "cover" }}
                   />
                   <View className="flex-row justify-between items-center">
