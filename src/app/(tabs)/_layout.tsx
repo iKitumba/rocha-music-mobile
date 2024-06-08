@@ -1,11 +1,12 @@
 import { Tabs } from "expo-router";
 import { CircleUserRound, CloudUpload, Music4 } from "lucide-react-native";
 import React from "react";
-import { Platform, TouchableOpacity, View } from "react-native";
+import { Platform, TouchableOpacity, View, StatusBar } from "react-native";
 
 const TabsLayout = () => {
   return (
     <View className="flex-1">
+      <StatusBar backgroundColor={"#020617"} barStyle="light-content" />
       <Tabs
         screenOptions={{
           headerShown: false,
