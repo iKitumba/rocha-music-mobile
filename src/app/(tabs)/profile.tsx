@@ -13,8 +13,17 @@ import {
   TouchableOpacity,
   View,
   TextInput,
+  FlatList,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+
+const filterOptions = [
+  "Recentes",
+  "Antigas",
+  "Crescrente",
+  "Crescrente",
+  "Decrescente",
+];
 
 const ProfilePage = () => {
   return (
@@ -73,6 +82,20 @@ const ProfilePage = () => {
             </TouchableOpacity>
           </View>
         </View>
+
+        <FlatList
+          horizontal
+          data={filterOptions}
+          contentContainerStyle={{ gap: 12, paddingHorizontal: 24 }}
+          showsHorizontalScrollIndicator={false}
+          renderItem={({ item }) => {
+            return (
+              <TouchableOpacity className="bg-fuchsia-950 px-3 py-2 rounded-xl">
+                <Text className="text-fuchsia-300">{item}</Text>
+              </TouchableOpacity>
+            );
+          }}
+        />
       </ScrollView>
     </View>
   );
