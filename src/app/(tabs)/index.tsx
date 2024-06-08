@@ -61,7 +61,7 @@ const HomePage = () => {
                       <Text className="text-base font-bold text-slate-100">
                         1234
                       </Text>
-                      <CloudDownload size={24} color={"gray"} />
+                      <CloudDownload size={24} color={"#94A3B8"} />
                     </TouchableOpacity>
                   </View>
                 </View>
@@ -74,7 +74,7 @@ const HomePage = () => {
           <View className="h-12 bg-slate-800 my-6 rounded-full flex-row border-1 border-[rgba(255, 255, 255, 0.11)] justify-between items-center">
             <TextInput
               className="text-base px-4 text-slate-100"
-              placeholderTextColor={"#999"}
+              placeholderTextColor={"#CBD5E1"}
               placeholder="Pesquisa pela música ou autor"
             />
             <TouchableOpacity className="w-12 h-12 bg-slate-500 rounded-full items-center justify-center">
@@ -113,7 +113,7 @@ const HomePage = () => {
                   </View>
                   <TouchableOpacity className="flex-row items-center gap-2 bg-slate-800 py-2 px-4 rounded-full">
                     <Text className="text-slate-200">120.003</Text>
-                    <CloudDownload size={24} color={"gray"} />
+                    <CloudDownload size={24} color={"#94A3B8"} />
                   </TouchableOpacity>
                 </View>
               );
