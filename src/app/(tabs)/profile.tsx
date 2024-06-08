@@ -3,9 +3,17 @@ import {
   CloudDownload,
   Ellipsis,
   UploadCloud,
+  Search,
 } from "lucide-react-native";
 import React from "react";
-import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import {
+  Image,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+  TextInput,
+} from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
 const ProfilePage = () => {
@@ -49,6 +57,19 @@ const ProfilePage = () => {
             <TouchableOpacity className="gap-2 py-1 px-2 bg-slate-800 flex-row items-center rounded-full">
               <Text className="text-base font-bold text-slate-100">1234</Text>
               <UploadCloud size={24} color={"#94A3B8"} />
+            </TouchableOpacity>
+          </View>
+        </View>
+
+        <View className="px-6 mt-6">
+          <View className="h-12 bg-slate-800 my-6 rounded-full flex-row border-1 border-[rgba(255, 255, 255, 0.11)] justify-between items-center">
+            <TextInput
+              className="text-base px-4 text-slate-100"
+              placeholderTextColor={"#CBD5E1"}
+              placeholder="Pesquisa pela música"
+            />
+            <TouchableOpacity className="w-12 h-12 bg-slate-500 rounded-full items-center justify-center">
+              <Search size={24} color={"white"} />
             </TouchableOpacity>
           </View>
         </View>
