@@ -4,6 +4,7 @@ import {
   Ellipsis,
   UploadCloud,
   Search,
+  LinkIcon,
 } from "lucide-react-native";
 import React from "react";
 import {
@@ -96,6 +97,45 @@ const ProfilePage = () => {
             );
           }}
         />
+
+        <View>
+          <FlatList
+            contentContainerStyle={{ gap: 12, paddingVertical: 24 }}
+            scrollEnabled={false}
+            data={[1, 2, 3, 4]}
+            renderItem={() => {
+              return (
+                <View className="flex-row justify-between items-center px-6 pb-6 border-b border-slate-800">
+                  <View className="flex-row gap-3 items-center relative">
+                    <Image
+                      source={{
+                        uri: "https://mighty.tools/mockmind-api/content/cartoon/32.jpg",
+                        width: 64,
+                        height: 64,
+                      }}
+                      className="rounded-xl"
+                    />
+                    <View>
+                      <Text className="text-xl font-bold text-slate-50">
+                        Baby
+                      </Text>
+                      <Text className="text-slate-400">
+                        Justin Bieber e Ludacris
+                      </Text>
+                    </View>
+                    <TouchableOpacity className="absolute -top-4 -left-4 z-10 bg-fuchsia-900 w-8 h-8 items-center justify-center rounded-lg">
+                      <LinkIcon size={16} color={"white"} />
+                    </TouchableOpacity>
+                  </View>
+                  <TouchableOpacity className="flex-row items-center gap-2 bg-slate-800 py-2 px-4 rounded-full">
+                    <Text className="text-slate-200">120.003</Text>
+                    <CloudDownload size={24} color={"#94A3B8"} />
+                  </TouchableOpacity>
+                </View>
+              );
+            }}
+          />
+        </View>
       </ScrollView>
     </View>
   );
